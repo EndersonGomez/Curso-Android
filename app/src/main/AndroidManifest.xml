@@ -13,6 +13,9 @@
         android:theme="@style/Base.Theme.Estudios"
         tools:targetApi="31">
         <activity
+            android:name=".cursoAndroid.Main5Activity"
+            android:exported="false" />
+        <activity
             android:name=".cursoAndroid.Main4Activity"
             android:exported="false" />
         <activity

@@ -31,11 +31,13 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-        //Creamos el evento escuchador para mostrar un mensaje de futuros cambios.
-       Biding.proximoCambio.setOnClickListener(new View.OnClickListener() {
+        //Creamos el evento escuchador para llevarnos a la activity de los botones.
+       Biding.botones.setOnClickListener(new View.OnClickListener() {
            @Override
            public void onClick(View v) {
-               Toast.makeText(MainActivity.this, "Proxima Actualizacion", Toast.LENGTH_LONG).show();
+
+               Intent intent1 = new Intent(MainActivity.this, Main5Activity.class);
+               startActivity(intent1);
            }
        });
 

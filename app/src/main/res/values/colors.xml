@@ -10,6 +10,15 @@
     <color name="vino">#8A3D3D</color>
     <color name="aquamarine">#3d8a79</color>
     <color name="verde_manzana">#53BF57</color>
+    <color name="rojo_claro">#D85E5E</color>
+    <color name="gris">#80A69B9B</color>
+    <color name="negro_azulado">#80232932</color>
+    <color name="azulado">#800C5FD8</color>
+    <color name="azul_cielo">#0E99BC</color>
+    <color name="amarillo">#DAC404</color>
+    <color name="verde_oscuro">#096E0D</color>
+
+
 
 
 </resources>
