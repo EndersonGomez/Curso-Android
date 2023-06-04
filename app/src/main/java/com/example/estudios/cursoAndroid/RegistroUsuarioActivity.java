@@ -23,8 +23,6 @@ public class RegistroUsuarioActivity extends AppCompatActivity {
         mBinding = ActivityRegistroUsuarioBinding.inflate(getLayoutInflater());
         setContentView(mBinding.getRoot());
 
-
-
         //Creamos el evento listener para ejecutar y enviar los datos a la segunda activity
         mBinding.registrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,13 +35,14 @@ public class RegistroUsuarioActivity extends AppCompatActivity {
                 String correoString = mBinding.correo.getText().toString();
                 String contraseñaString = mBinding.contrasenia.getText().toString();
 
+                //Si no se cumplen los parametros establecidos enviara mensajes de error diferentes por cada campo.
                 if (nombreString.isEmpty() || !nombreString.matches("^[a-zA-Z]+$")){
                     Toast.makeText(RegistroUsuarioActivity.this, "El nombre solo puede llevar letras y " +
-                            "no puede estar el campo vacio", Toast.LENGTH_LONG).show();
+                            " no puede estar el campo vacio", Toast.LENGTH_LONG).show();
                 }
                 else if (apellidoString.isEmpty() || !apellidoString.matches("^[a-zA-Z]+$")){
                     Toast.makeText(RegistroUsuarioActivity.this, "El apellido solo puede llevar letras y" +
-                            "no puede estar el campo vacio", Toast.LENGTH_LONG).show();
+                            " no puede estar el campo vacio", Toast.LENGTH_LONG).show();
                 }
                 else if (!PatternsCompat.EMAIL_ADDRESS.matcher(correoString).matches()){
                     Toast.makeText(RegistroUsuarioActivity.this, "El correo debe tener el formato correcto",
@@ -60,8 +59,6 @@ public class RegistroUsuarioActivity extends AppCompatActivity {
         });
 
     }
-
-
 
     //Creamos la funcion que envia los datos a la otra activity
     private void pasarDatos (String nombre, String apellido, String correo, String contrasenia){
