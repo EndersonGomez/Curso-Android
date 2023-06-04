@@ -11,13 +11,13 @@ import com.example.estudios.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Creamos el atributo del tipo viewBiding.
+    //Creamos el atributo viewBiding que solitica el ejercicio 10 .
     private ActivityMainBinding Biding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //Luego le damos el valor  y enlazamos la parte visual a nuestro codigo.
+        //Luego le damos el valor solicitado en el ejercicio 10.
         Biding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(Biding.getRoot());
 
