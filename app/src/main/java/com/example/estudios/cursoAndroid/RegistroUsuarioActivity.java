@@ -13,7 +13,7 @@ import com.example.estudios.databinding.ActivityRegistroUsuarioBinding;
 
 public class RegistroUsuarioActivity extends AppCompatActivity {
 
-    //Creamos los atributos.
+    //Creamos el atributo viewBiding.
     private ActivityRegistroUsuarioBinding mBinding;
 
     @Override

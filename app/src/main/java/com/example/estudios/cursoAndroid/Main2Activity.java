@@ -9,7 +9,7 @@ import com.example.estudios.databinding.ActivityMain2Binding;
 
 public class Main2Activity extends AppCompatActivity {
 
-    //Se crea el atributo del tipo databiding.
+    //Se crea el atributo del tipo viewBiding.
     private ActivityMain2Binding main2Binding;
 
     @Override
@@ -30,7 +30,7 @@ public class Main2Activity extends AppCompatActivity {
             main2Binding.contraseniaRecibida.setText(intent.getStringExtra("password"));
         }
 
-        main2Binding.button.setOnClickListener(new View.OnClickListener() {
+        main2Binding.escogerImagen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent1 = new Intent(Main2Activity.this, Main3Activity.class);

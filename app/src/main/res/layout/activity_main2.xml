@@ -135,11 +135,12 @@
         app:layout_constraintTop_toBottomOf="@+id/etiquetaContrasenia" />
 
     <Button
-        android:id="@+id/button"
-        android:layout_width="150dp"
+        android:id="@+id/escogerImagen"
+        android:layout_width="220dp"
         android:layout_height="80dp"
         android:layout_marginTop="64dp"
-        android:text="Button"
+        android:backgroundTint="@color/aquamarine"
+        android:text="ESCOGER AVATAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
