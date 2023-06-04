@@ -3,6 +3,8 @@ package com.example.estudios.cursoAndroid;
 import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+
 import com.example.estudios.databinding.ActivityMain2Binding;
 
 public class Main2Activity extends AppCompatActivity {
@@ -27,5 +29,13 @@ public class Main2Activity extends AppCompatActivity {
             main2Binding.correoRecibido.setText(intent.getStringExtra("email"));
             main2Binding.contraseniaRecibida.setText(intent.getStringExtra("password"));
         }
+
+        main2Binding.button.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent1 = new Intent(Main2Activity.this, Main3Activity.class);
+                startActivity(intent1);
+            }
+        });
     }
 }
